@@ -66,7 +66,7 @@ def score_game(game_core): #Функция 1000 раз обращается к �
     random_array = numpy.random.randint(1,101, size=(1000))
     for number in random_array:
         count_ls.append(game_core(number)) #список количества попыток
-        score = int(sum(count_ls)/len(count_ls)) #среднее арифметическое из количества попыток
+    score = int(sum(count_ls)/len(count_ls)) #среднее арифметическое из количества попыток
     print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
     return(score)
 
